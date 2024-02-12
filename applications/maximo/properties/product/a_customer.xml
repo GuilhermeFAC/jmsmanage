@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+	<name>a_customer</name>
+	<version>
+		<major>6</major>
+		<minor>0</minor>
+		<patch>0</patch>
+		<build>999</build>
+	</version>
+	<dbmaxvarname>ACUSTOMER</dbmaxvarname>
+	<dbscripts>a_customer</dbscripts>
+	<dbversion>V600-01</dbversion>
+	<lastdbversion>V600-01</lastdbversion>
+    <depends>hse</depends>
+	<extensions>
+        <mboset objectname='WOTAGLOCK'>tble.app.workorder.TbleWoTagLockSet</mboset>
+        <mboset objectname='WOTAGOUT'>tble.app.workorder.TbleWoTagOutSet</mboset>
+        <mboset objectname='TAGOUT'>tble.app.safety.TbleTagOutSet</mboset>
+        <mboset objectname='TAGLOCK'>tble.app.safety.TbleTagLockSet</mboset>
+        <mboset objectname='LOCKOUT'>tble.app.safety.TbleLockOutSet</mboset>
+        <mboset objectname='TAGCHANGESTATUS'>tble.app.safety.virtual.TbleTagOutChangeStatusSet</mboset>
+        <mboset objectname='TAGREVINPUT'>tble.app.safety.virtual.TbleTagOutRevisionInputSet</mboset>
+        <mboset objectname='WPMATERIAL'>tble.app.workorder.TbleWPMaterialSet</mboset>
+        <field objectname='PRLINE' attributename='WONUM'>tble.app.common.purchasing.TbleFldPurWonum</field>
+        <field objectname='PRLINE' attributename='DESCRIPTION'>tble.app.common.purchasing.TbleFldPurDescription</field>
+        <field objectname='WPMATERIAL' attributename='ITEMNUM'>tble.app.workorder.TbleFldWpMatItemNum</field>
+        <field objectname='LABTRANS' attributename='LABORCODE'>tble.app.labor.TbleFldLabTransLaborcode</field>
+        <field objectname='MRLINE' attributename='STORELOC'>tble.app.mr.TbleFldMRLineStoreloc</field>
+        <field objectname='MRLINE' attributename='ITEMNUM'>tble.app.mr.TbleFldMRLineItemnum</field>
+    </extensions>
+</product>

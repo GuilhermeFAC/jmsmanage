@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script SYSTEM "script.dtd">
+
+<script author="GUIITC" scriptname="a_customer">
+  <description>update class custom tble</description>
+  <statements>
+    <freeform description="update classname">
+      <sql target="all">
+        update maxobject set classname='tble.app.workorder.TbleWoTagLockSet' where objectname='WOTAGLOCK';
+        update maxobjectcfg set classname='tble.app.workorder.TbleWoTagLockSet' where objectname='WOTAGLOCK';
+        update maxobject set classname='tble.app.workorder.TbleWoTagOutSet' where objectname='WOTAGOUT';
+        update maxobjectcfg set classname='tble.app.workorder.TbleWoTagOutSet' where objectname='WOTAGOUT';
+        update maxobject set classname='tble.app.safety.TbleTagOutSet' where objectname='TAGOUT';
+        update maxobjectcfg set classname='tble.app.safety.TbleTagOutSet' where objectname='TAGOUT';
+        update maxobject set classname='tble.app.safety.TbleTagLockSet' where objectname='TAGLOCK';
+        update maxobjectcfg set classname='tble.app.safety.TbleTagLockSet' where objectname='TAGLOCK';
+        update maxobject set classname='tble.app.safety.TbleLockOutSet' where objectname='LOCKOUT';
+        update maxobjectcfg set classname='tble.app.safety.TbleLockOutSet' where objectname='LOCKOUT';
+        update maxobject set classname='tble.app.workorder.TbleWPMaterialSet' where objectname='WPMATERIAL';
+        update maxobjectcfg set classname='tble.app.workorder.TbleWPMaterialSet' where objectname='WPMATERIAL';
+        update maxattribute set classname='tble.app.common.purchasing.TbleFldPurWonum' where objectname='PRLINE' and attributename='WONUM';
+        update maxattributecfg set classname='tble.app.common.purchasing.TbleFldPurWonum' where objectname='PRLINE' and attributename='WONUM';
+        update maxattribute set classname='tble.app.common.purchasing.TbleFldPurDescription' where objectname='PRLINE' and attributename='DESCRIPTION';
+        update maxattributecfg set classname='tble.app.common.purchasing.TbleFldPurDescription' where objectname='PRLINE' and attributename='DESCRIPTION';
+        update maxattribute set classname='tble.app.workorder.TbleFldWpMatItemNum' where objectname='WPMATERIAL' and attributename='ITEMNUM';
+        update maxattributecfg set classname='tble.app.workorder.TbleFldWpMatItemNum' where objectname='WPMATERIAL' and attributename='ITEMNUM';
+        update maxattribute set classname='tble.app.mr.TbleFldMRLineItemnum' where objectname='MRLINE' and attributename='ITEMNUM';
+        update maxattributecfg set classname='tble.app.mr.TbleFldMRLineItemnum' where objectname='MRLINE' and attributename='ITEMNUM';
+        update maxattribute set classname='tble.app.mr.TbleFldMRLineStoreloc' where objectname='MRLINE' and attributename='STORELOC';
+        update maxattributecfg set classname='tble.app.mr.TbleFldMRLineStoreloc' where objectname='MRLINE' and attributename='STORELOC';
+        update maxattribute set classname='tble.app.labor.TbleFldLabTransLaborcode' where objectname='LABTRANS' and attributename='LABORCODE';
+        update maxattributecfg set classname='tble.app.labor.TbleFldLabTransLaborcode' where objectname='LABTRANS' and attributename='LABORCODE';
+      </sql>
+    </freeform>
+  </statements>
+</script>
